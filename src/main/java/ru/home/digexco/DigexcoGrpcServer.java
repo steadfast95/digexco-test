@@ -8,8 +8,6 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.grpc.server.service.GrpcService;
 import org.springframework.scheduling.annotation.Async;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 @GrpcService
