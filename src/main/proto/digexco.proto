@@ -8,6 +8,7 @@ service SequenceService {
 
 message ClientRequest {
   uint32 number = 1;
+  uint32 number2 =2;
 }
 
 message ServerResponse {
