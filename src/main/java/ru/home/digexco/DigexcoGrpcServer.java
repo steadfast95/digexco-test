@@ -16,7 +16,6 @@ public class DigexcoGrpcServer extends SequenceServiceGrpc.SequenceServiceImplBa
     private final int maxSequence = 50;
     private final long ms = 2000L;
 
-
     @Override
     public void getSeq(Digexco.ClientRequest request, StreamObserver<Digexco.ServerResponse> responseObserver) {
         int number = request.getNumber();
