@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.example.grpc;
+
+service SequenceService {
+  rpc getSeq(ClientRequest) returns (stream ServerResponse);
+}
+
+message ClientRequest {
+  uint32 number = 1;
+}
+
+message ServerResponse {
+  uint32 number = 1;
+}
